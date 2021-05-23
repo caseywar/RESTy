@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Controls({ onSubmit, onChange, url, jsonInput }) {
+  const jsonPlaceholder = '{ \n   "send": "raw", \n   "json": "here" \n}'
+
     return (
       <div>
         <form onSubmit={onSubmit}>
@@ -52,9 +54,11 @@ function Controls({ onSubmit, onChange, url, jsonInput }) {
           </section>
           <section>
             <textarea
+              rows='4'
+              columns='50'
               name='jsonInput'
               value={jsonInput}
-              placeholder='{ \n   "send": "raw", \n   "json": "here" \n}'
+              placeholder={jsonPlaceholder}
               onChange={onChange}
             ></textarea>
           </section>
