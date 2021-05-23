@@ -9,6 +9,8 @@ a mock of postman
 - Submit Button
 - JSON input for post/put
 
+- display section for results of api call
+
 - history list
 
 ### Container
