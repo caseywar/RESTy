@@ -18,6 +18,7 @@ function Controls({ onSubmit, onChange, url, jsonInput }) {
           </section>
           <section>
             <input 
+              data-testid='get'
               type='radio'
               name='method'
               value='GET'
@@ -50,7 +51,7 @@ function Controls({ onSubmit, onChange, url, jsonInput }) {
               onChange={onChange}
             />
             <label htmlFor='delete'>DELETE</label>
-            <button>Fetch API</button>
+            <button aria-label='fetch-button'>Fetch API</button>
           </section>
           <section>
             <textarea

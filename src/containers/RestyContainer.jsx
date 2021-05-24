@@ -34,6 +34,7 @@ export default class RestyContainer extends Component {
         const { url, jsonInput, apiResults } = this.state;
         return (
             <main>
+                <h1>Postman Mock</h1>
                 <Controls 
                     onSubmit={this.handleSubmit}
                     onChange={this.handleChange}
